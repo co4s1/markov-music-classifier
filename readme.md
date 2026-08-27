@@ -12,4 +12,4 @@ a lower probability.
 <img src="https://github.com/co4s1/markov-music-classifier/blob/master/maps/mozart_notes_dna.png" width="450">
 
 **Bach heatmap**
-![alt text](https://github.com/co4s1/markov-music-classifier/blob/master/maps/mozart_notes_dna.png?raw=true)
+<img src="https://github.com/co4s1/markov-music-classifier/blob/master/maps/bach_notes_dna.png" width="450">
