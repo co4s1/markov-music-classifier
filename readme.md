@@ -45,10 +45,10 @@ composer
 
 
 
-### Heatmaps
+### Transition Matrix Heatmaps
 In these maps,the y-axis represents the current note (Xn) and the x-axis represents the subsequent note (Xn+1).
-Warmer colors indicate a high probability that a particular transition, and cooler colors represent
-a lower probability.
+Warmer colors indicate a higher frequency of that a particular transition for the particular composer, and cooler colors represent
+a lower frequency.
 
 **Mozart notes heatmap**
 
