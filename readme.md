@@ -9,7 +9,7 @@ Warmer colors indicate a high probability that a particular transition, and cool
 a lower probability.
 
 **Mozart heatmap**
-<img src="https://github.com/co4s1/markov-music-classifier/blob/master/maps/mozart_notes_dna.png" width="48">
+<img src="https://github.com/co4s1/markov-music-classifier/blob/master/maps/mozart_notes_dna.png" width="450">
 
 **Bach heatmap**
 ![alt text](https://github.com/co4s1/markov-music-classifier/blob/master/maps/mozart_notes_dna.png?raw=true)
