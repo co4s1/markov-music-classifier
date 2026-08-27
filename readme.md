@@ -4,7 +4,26 @@ The training process involved counting every occurrence of a transition between 
 If there is an underlying style for a particular composer, the composer can be thought of as the probability distribution function. By recording transitions experimentally over a large number of iterations, the experimental probability distribution should converge to the “theoretical” probability distribution "function" of that composer. 
 For the purpose of this investigation, 26 movements (Sonatas, Fantasias, Rondos) of Wolfgang Amadeus Mozart, representing 30004 transitions, were analysed, and 15 movements (Inventions, Sinfonias, Preludes) of Johann Sebastian Bach, representing 34015 transitions, were analysed.
 
+## Method
+1. **Dataset & State Space Definition**  
+   Analyzed 26 piano movements by Mozart (30,004 transitions) and 15 by Bach (34,015 transitions) in MusicXML format. Three state spaces were constructed:
+   * **Pitch:** Transposed MIDI values (centered to C Major via circle-of-fifths key metadata).
+   * **Duration:** Decimal beat lengths (e.g., quarter note = 1.0).
+   * **Combined:** Higher-dimensional state space pairing (pitch, duration) tuples.
 
+2. **Transition Matrix Construction**  
+   Frequency tables recorded sequential state occurrences ($X_i \rightarrow X_{i+1}$). Rows were normalized to yield first-order Markov probability distributions:
+   $$P_{ij} = \frac{N_{ij}}{\sum_{k=1}^{n} N_{ik}}$$
+
+3. **Smoothing & Floor Penalties**  
+   * **Laplace Smoothing:** Initialized state occurrences with a baseline value of $+1$ to resolve zero-probability errors for unseen transitions.
+   * **Vocabulary Floor:** Assigned a minimal probability floor ($1 \times 10^{-10}$) for out-of-vocabulary states.
+
+4. **Log-Likelihood Classification**  
+   Evaluated 16 unseen test pieces (8 Bach, 8 Mozart) by calculating cumulative Log-Likelihood to prevent numerical underflow:
+   $$LL_{\text{Composer}} = \sum_{t=1}^{T-1} \ln\left(P_{\text{Composer}}(X_t)\right)$$  
+   The model assigned the piece to the composer whose matrix yielded the higher (less negative) Log-Likelihood score.
+   
 ## Results
 
 The model was tested on 16 pieces not used in the training data. Moreover, the test pieces were
