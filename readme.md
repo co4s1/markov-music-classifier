@@ -88,8 +88,8 @@ Table of the results of classification:
 | Durs              | −2986.31  | −1659.19  | Bach ✓    |
 | Comb              | −13626.12 | −10519.84 | Bach ✓    |
 | BWV790.musicxml   | Notes     | −6011.21  | −4051.63  | Bach ✓   |
-| Durs              | −6667.06  | −2901.89  | Bach ✓    |
-| Comb              | −13134.63 | −11141.07 | Bach ✓    |
+|                   | Durs              | −6667.06  | −2901.89  | Bach ✓    |
+|                   | Comb              | −13134.63 | −11141.07 | Bach ✓    |
 | BWV812.musicxml   | Notes     | −25994.85 | −18431.64 | Bach ✓   |
 |                   | Durs      | −16601.98 | −9442.10  | Bach ✓   |
 |                   | Comb      | −52497.00 | −48394.88 | Bach ✓   |
