@@ -1,3 +1,5 @@
+Finished on March 5th, 2026
+
 # Markov chain classical music classifier
 ## Abstract 
 The training process involved counting every occurrence of a transition between two states across the entire training library used to create the probability distribution. 
