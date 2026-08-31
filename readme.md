@@ -1,6 +1,8 @@
 Finished on March 5th, 2026
 
 # Markov chain classical music classifier
+An investigation into quantifying musical style using first-order Markov chain transition matrices. By analyzing pitch and duration transitions in transposed MusicXML files, this project calculates log-likelihood scores to classify whether an unseen piece was composed by Johann Sebastian Bach or Wolfgang Amadeus Mozart.
+
 ## Abstract 
 The training process involved counting every occurrence of a transition between two states across the entire training library used to create the probability distribution. 
 If there is an underlying style for a particular composer, the composer can be thought of as the probability distribution function. By recording transitions experimentally over a large number of iterations, the experimental probability distribution should converge to the “theoretical” probability distribution "function" of that composer. 
