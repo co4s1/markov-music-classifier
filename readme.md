@@ -71,6 +71,22 @@ a lower frequency.
 
 <img src="https://github.com/co4s1/markov-music-classifier/blob/master/maps/bach_notes_and_durations_dna.png" width="450">
 
+Comparing Mozart’s note transition matrix heatmap and Bach’s note transition matrix
+heatmap, distinct structural differences can be observed. Both composers show a distinct
+center diagonal line. This means that composers favor small intervals over large leaps, making the
+probability of nearby notes being the next higher, hence making the diagonal line. Mozart’s pitch
+map has two distinct lines visible. The main line shows he moves by small transitions. The second line shows he
+frequently uses a leap of specific note difference. It’s so predictable that it literally draws a second
+path on the map. Mozart's main center axis also features faint vertical lines that drip from the
+main diagonal further away from the center axis, showing how as the pitch changes, Mozart
+is less likely to make the leap as it becomes bigger. Bach’s pitch map has a center axis diagonal
+line too. Bach’s graph also has distinct red squares scattered further
+away from the center line, indicating that Bach uses leaps much more frequently and has some
+favorite ones (the ones that are best seen in the heat map). These spots represent jumps from
+a very low note to a much higher note (or vice versa). However, the corners (top-left and bottom-
+right) are mostly occupied only in Mozart’s map. Meaning that when the music is at the very
+highest or very lowest notes, Mozart is more "repetitive" and stays in that zone longer than Bach.
+
 
 ## Conclusion
 Based on the results of this exploration, the extent to which a first-order Markov chain transition
